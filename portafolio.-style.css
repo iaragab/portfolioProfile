@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--color-day);
+}
+
+:root{
+    --fondoDark:#121212;
+    --color-day:#f4f4f4;
+    
+    --title: #ffe0db;
+    --RosetWhite: #efb2a8;
+    --colorRosetW: #cc7366 ;
+    --colorRosetD:#802e2e;
+    --fondoRecuadro:#aa8e7db2;
+    --tituloColor: #4c3830;
+    --radio-border:25px;
+    --minImag:50%;
+}
+
+/* ======== header ======== */
+header{
+    width: 100vw;
+}
+
+.logo-ig{
+    width: 5%;
+    margin: 10px 27px;
+    /* filter: invert(0.8); */
+}
+
+nav{
+    box-shadow: 0px 0px 3px #808080b5;
+    border-radius: 0px 0px 25px 25px;
+}
+
+nav, .links{
+    width: 100%;
+    list-style: none;
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    align-items:center;
+
+}
+
+.menuExpen {
+    display: none;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+
+}
+
+li{
+    margin-right: 25px;
+    text-transform: math-auto;
+    padding: 1rem;
+    border: 2px solid var(--colorRecuadro);
+}
+
+a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--fondoDark);
+}
+
+a:hover {
+   color: var(--RosetWhite);
+}
+
+.botonCamb{
+    width: 6%;
+    padding: 5px;
+    border-radius: 100%;
+    margin-right: 25px;
+    background-color:var(--fondoDark);
+
+}
+
+.imag-cambio{
+    width: 75%;
+}
+
+/* ======== main ======== */
+
+.inicio{
+    padding: 2% 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 0;
+    color: var(--colorRosetD);
+    text-shadow:0px 1px 1px var(--tituloColor)
+}
+
+h2{
+    font-weight: 200;
+}
+
+
+.imagenBooks{
+    width:35%;
+    height: 100%;
+    border-radius: 100%;
+    margin:0px 50px;
+    mask-image: linear-gradient(
+        var(--fondoDark) 54%
+        71%, transparent
+    );
+}
+
+/* ======== separador ======== */
+
+.separador{
+    width: 50vw;
+    height: 5px;
+    border-radius: 20px;
+    background:var(--tituloColor);
+    margin: 45px auto;
+}
+
+/* ======== general coleccion ======== */
+.coleccion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ======== estudios ======== */
+
+.estudios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoIMG{
+    margin-right: 55px;
+}
+
+.medida{
+    font-size: 1.3rem;
+}
+
+.imagCartas{
+    width: 25%;
+    margin-right: 30px;
+    filter: contrast(0.5);
+}
+
+/* ======== idiomas ======== */
+
+.idiomas{
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenesConjunto{
+    max-width: 90vw;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textoIMG{
+    margin-left: 55px;
+}
+
+.logos{
+    width: 100px;
+    height: 100px;
+    padding: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    flex: 1 1 100px;
+    max-width: 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.817)
+}
+.html{
+    background-color: rgb(244, 149, 48);
+}
+.css{
+    background-color: rgb(168, 99, 232);
+}
+.js{
+    background-color: rgb(255, 244, 148);
+}
+.svg{
+    background-color: rgb(210, 210, 210);
+}
+
+
+/* ============= galeria ============= */
+
+
+.megaSubTitulo{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.star{
+    width: 5%;
+}
+
+h3{
+    color: var(--tituloColor);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+.galeria {
+    width: 100vw;
+    height: 85vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem 3rem;
+    box-shadow: 0 0 15px var(--sombra-suave);
+    box-sizing: border-box;
+  }
+
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   .img-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    
+  }
+
+   .portada {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+ }
+
+ /* ==== buttons ==== */
+
+   .button-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+   button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+   .botones {
+    font-size: 2rem;
+    color: var(--tituloColor);
+    padding:0.5rem 1rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+   .botones:hover {
+    box-shadow: 0px 0px 3px #808080b5;
+    transform: scale(1.1);
+  }
+ 
+ 
+ .izquierda{
+    position: absolute;
+    left: 30px;
+ }
+ .derecha{
+    position: absolute;
+    right: 30px;
+ }
+ 
+/*  ========== footer ========= */
+
+footer{
+    width: 100%;
+    box-shadow: 0px 0px 3px #808080b5;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.foot{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot a{
+    font-size: 1rem;
+}
+
+
+
+ /* ================== media ================== */
+
+@media (max-width: 800px) {
+ /* nav */
+
+.logo-ig {
+    width: 9%;
+}    
+ .menuExpen {
+    display: block;
+    margin: 0px 20px;
+}
+        
+nav .links {
+    background: rgba(241, 241, 240, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 25px 25px;
+    box-shadow: 0px 0px 3px #808080b5;
+
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1000;
+    right: 0px;
+    top: 67px;
+    padding: 2rem;
+    gap: 4rem;
+}
+
+nav{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items:center;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+.botonCamb{
+    width: 10%;
+}
+
+/* main */
+
+.imagenBooks{
+    margin:0px;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 0;
+    color: var(--colorRosetD);
+    text-shadow:0px 1px 1px var(--tituloColor)
+}
+/* segunda parte */
+.estudios{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+/* tercera parte */
+.idiomas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logos{
+    width: 60px;
+    height: 60px;
+    font-size: 0.8rem;
+}
+
+/* galeria */
+
+ .izquierda{
+    left: 150px;
+    bottom: 25px;
+ }
+  .derecha{
+    right: 150px;
+    bottom: 25px;
+ }
+
+.foot a{
+    font-size: 0.8rem;
+}
+
+}
+ /* ================== modo oscuro ================== */
+
+
+ body{
+    background-color: var(--fondoDark);
+    color: var(--color-day);
+ }
+
+ .logo-ig, .menuExpen{
+    filter: contrast(0.1);
+ }
+
+
+ h3, a, .botones{
+        color: var(--color-day);
+
+ }
