@@ -15,15 +15,15 @@ btnMenu.addEventListener("click", function(){
 const imagenes = [
     {
         id : 1,
-        img : '../portafolio/img-portafolio/1E64C38D-C90A-4B5C-BC5F-ED20F502D015_1_201_a.jpeg',
+        img : 'img-portafolio/1E64C38D-C90A-4B5C-BC5F-ED20F502D015_1_201_a.jpeg',
     },
     {
         id : 1,
-        img : '../portafolio/img-portafolio/fondo5.png',
+        img : 'img-portafolio/iaragab.github.io_fictional-cafeteria-proyect_events.html.png',
     },
     {
         id : 1,
-        img : '../portafolio/img-portafolio/fondo3.png',
+        img : 'img-portafolio/Captura de pantalla 2025-07-24 a la(s) 10.02.38 p. m..png',
     },
     {
         id : 1,
