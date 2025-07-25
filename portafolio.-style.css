@@ -29,7 +29,6 @@ header{
 .logo-ig{
     width: 5%;
     margin: 10px 27px;
-    /* filter: invert(0.8); */
 }
 
 nav{
@@ -76,11 +75,15 @@ a:hover {
 }
 
 .botonCamb{
-    width: 6%;
-    padding: 5px;
+    padding: 3%;
     border-radius: 100%;
     margin-right: 25px;
     background-color:var(--fondoDark);
+    background-image: url(img-portafolio/mediamoon.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
 
 }
 
@@ -107,8 +110,8 @@ a:hover {
 h1{
     font-size: 5rem;
     margin: 0;
-    color: rgb(185, 76, 94);
-    text-shadow: 0px 1px 1px red, 2px 4px 25px #b20101;
+    color: rgb(69, 68, 68);
+    text-shadow: 0px 1px 1px rgb(16, 15, 15)
 }
 
 h2{
@@ -164,8 +167,7 @@ h2{
 .imagCartas{
     width: 25%;
     margin-right: 65px;
-    filter: contrast(0.5);
-}
+    filter: drop-shadow(0px 0px 1px rgba(128, 128, 128, 0.405));}
 
 /* ======== idiomas ======== */
 
@@ -438,17 +440,43 @@ h1{
  /* ================== modo oscuro ================== */
 
 
- body{
+ .body-dark{
     background-color: var(--fondoDark);
     color: var(--color-day);
  }
 
- .logo-ig, .menuExpen{
-    filter: contrast(0.1);
+ h1-dark, h3-dark{
+    color: rgb(185, 76, 94);
+    text-shadow: 0px 1px 1px red, 2px 4px 25px #b20101;
+ }
+
+ .logo-ig-dark, .menuExpen-dark{
+   filter: invert(1);
  }
 
 
- h3, a, .botones{
+ h3-dark, a-dark, .botones-dark{
         color: var(--color-day);
 
  }
+
+ .html-dark {
+    background-color: rgb(175 95 10);
+    color: #faf9f9;
+    text-shadow: 0px 0px 1px #d9d0d0;
+}
+ .css-dark {
+    background-color: rgb(87 21 149);
+    color: #faf9f9;
+    text-shadow: 0px 0px 1px #d9d0d0;
+}
+ .js-dark {
+    background-color: rgb(197 178 12);
+    color: #faf9f9;
+    text-shadow: 0px 0px 1px #d9d0d0;
+}
+ .svg-dark {
+        background-color: rgb(113 113 113);
+    color: #faf9f9;
+    text-shadow: 0px 0px 1px #d9d0d0;
+} 
