@@ -206,34 +206,12 @@ h2{
     border-radius: 50px;
     box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.817)
 }
-.html{
-    background-color: rgb(244, 149, 48);
-    color: #0f0f0f;
-    box-shadow: 0px 0px 5px #a6a6a6;
-    border:1px solid grey ;
+.circulo{
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid white;
+    text-shadow: 0px 0px 2px #fff;
 }
-.css{
-    background-color: rgb(168, 99, 232);
-    color: #0f0f0f;
-    box-shadow: 0px 0px 5px #a6a6a6;
-    border:1px solid grey ;
-
-}
-.js{
-    background-color: rgb(255, 244, 148);
-    color: #0f0f0f;
-    box-shadow: 0px 0px 5px #a6a6a6;
-    border:1px solid grey ;
-
-}
-.svg{
-    background-color: rgb(210, 210, 210);
-    color: #0f0f0f;
-    box-shadow: 0px 0px 5px #a6a6a6;
-    border:1px solid grey ;
-
-}
-
 
 /* ============= galeria ============= */
 
@@ -450,12 +428,12 @@ h1{
     text-shadow: 0px 1px 1px red, 2px 4px 25px #b20101;
  }
 
- .logoImgdark{
-    filter: invert(1);
- }
+ .logoImgdark {
+  filter: invert(1);
+}
 
  .botonSun{
-    background-color:rgb(234, 234, 234);
+    background-color:rgb(179, 179, 179);
     background-image: url(img-portafolio/sun.png);
     background-size: 60%;
     background-repeat: no-repeat;
@@ -464,12 +442,27 @@ h1{
  
  }
 
-.idioma-dark {
-    background-color: #2c2c2c;
-    color: #ffffff;
-    border: 1px solid white;
-    text-shadow: 0px 0px 2px #fff;
+.logoHtmldarck{
+  background-color: #b85c00;
+  color: #faf9f9;
+  text-shadow: 0px 0px 1px #a73800;
 }
+.logoCssdarcktml{
+  background-color: #730ba2;
+  color: #faf9f9;
+  text-shadow: 0px 0px 1px #630496;
+}
+.logoJsdarck{
+  background-color: #cdc120;
+  color: #faf9f9;
+  text-shadow: 0px 0px 1px #baa502;
+}
+.logoSvgdarck{
+  background-color: #a5a5a5;
+  color: #faf9f9;
+  text-shadow: 0px 0px 1px #6c6c6c;
+}
+
 
 
 
