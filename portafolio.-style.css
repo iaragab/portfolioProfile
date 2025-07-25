@@ -445,38 +445,31 @@ h1{
     color: var(--color-day);
  }
 
- h1-dark, h3-dark{
+ .mod-dark{
     color: rgb(185, 76, 94);
     text-shadow: 0px 1px 1px red, 2px 4px 25px #b20101;
  }
 
- .logo-ig-dark, .menuExpen-dark{
-   filter: invert(1);
+ .logoImgdark{
+    filter: invert(1);
  }
 
-
- h3-dark, a-dark, .botones-dark{
-        color: var(--color-day);
-
+ .botonSun{
+    background-color:rgb(234, 234, 234);
+    background-image: url(img-portafolio/sun.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+ 
  }
 
- .html-dark {
-    background-color: rgb(175 95 10);
-    color: #faf9f9;
-    text-shadow: 0px 0px 1px #d9d0d0;
+.idioma-dark {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid white;
+    text-shadow: 0px 0px 2px #fff;
 }
- .css-dark {
-    background-color: rgb(87 21 149);
-    color: #faf9f9;
-    text-shadow: 0px 0px 1px #d9d0d0;
-}
- .js-dark {
-    background-color: rgb(197 178 12);
-    color: #faf9f9;
-    text-shadow: 0px 0px 1px #d9d0d0;
-}
- .svg-dark {
-        background-color: rgb(113 113 113);
-    color: #faf9f9;
-    text-shadow: 0px 0px 1px #d9d0d0;
-} 
+
+
+
