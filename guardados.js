@@ -6,6 +6,7 @@ const titleRed = document.querySelectorAll(".title-color");
 const logoNav = document.getElementById("logo");
 const circulos = document.querySelectorAll(".circulo");
 
+
 // Recuperar configuración guardada
   if (localStorage.getItem("modoSun") === "oscuro") {
     btnDark.classList.add("botonSun");
@@ -20,7 +21,7 @@ const circulos = document.querySelectorAll(".circulo");
     titleRed.forEach(title => title.classList.add("mod-dark"));
   }
   if (localStorage.getItem("modocirculos") === "oscuro") {
-    titleRed.forEach(title => title.classList.add("cirDark"));
+    circulos.forEach(title => title.classList.add("cirDark"));
   }
 
 
