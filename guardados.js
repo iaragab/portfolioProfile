@@ -1,45 +1,27 @@
 const body = document.body;
 const btnDark = document.getElementById("moon-sun");
+
 //  objetos
 const titleRed = document.querySelectorAll(".title-color");
 const logoNav = document.getElementById("logo");
-
-const logoHtml =document.getElementById("html")
-const logoCss =document.getElementById("css")
-const logoJs =document.getElementById("js")
-const logoSvg =document.getElementById("svg")
-
-
+const circulos = document.querySelectorAll(".circulo");
 
 // Recuperar configuración guardada
-if (localStorage.getItem("modoSun") === "oscuro") {
-  btnDark.classList.add("botonSun");
-}
-if (localStorage.getItem("modoBody") === "activado") {
-  body.classList.add("body-dark");
-}
-
-//  objetos
-if (localStorage.getItem("modoTitle") === "activado") {
-  titleRed.forEach(title => title.classList.add("mod-dark"));
-}
-if (localStorage.getItem("logoDark") === "activado") {
-  logoNav.classList.add("logoImgdark");
-}
-if (localStorage.getItem("cirHtml") === "activado") {
-  logoHtml.classList.add("logoHtmldarck");
-}
-if (localStorage.getItem("cirCss") === "activado") {
-  logoCss.classList.add("logoCssdarcktml");
-}
-if (localStorage.getItem("cirJs") === "activado") {
-  logoJs.classList.add("logoJsdarck");
-}
-if (localStorage.getItem("cirSvg") === "activado") {
-  logoSvg.classList.add("logoSvgdarck");
-}
-
-
+  if (localStorage.getItem("modoSun") === "oscuro") {
+    btnDark.classList.add("botonSun");
+  }
+  if (localStorage.getItem("modoBody") === "activado") {
+    body.classList.add("body-dark");
+  }
+  if (localStorage.getItem("logoDark") === "activado") {
+    logoNav.classList.add("logoImgdark");
+  }
+  if (localStorage.getItem("modoTitle") === "activado") {
+    titleRed.forEach(title => title.classList.add("mod-dark"));
+  }
+  if (localStorage.getItem("modocirculos") === "oscuro") {
+    titleRed.forEach(title => title.classList.add("cirDark"));
+  }
 
 
 
@@ -48,13 +30,11 @@ btnDark.addEventListener("click", () => {
   btnDark.classList.toggle("botonSun");
   body.classList.toggle("body-dark");
 
-//  objetos
-  titleRed.forEach(title => title.classList.toggle("mod-dark"));
   logoNav.classList.toggle("logoImgdark");
-  logoHtml.classList.toggle("logoHtmldarck");
-  logoCss.classList.toggle("logoCssdarcktml");
-  logoJs.classList.toggle("logoJsdarck");
-  logoSvg.classList.toggle("logoSvgdarck");
+  titleRed.forEach(title => title.classList.toggle("mod-dark"));
+  circulos.forEach(cir => cir.classList.toggle("cirDark"));
+
+
 
 
   // Guardar estado en localStorage
@@ -62,7 +42,7 @@ btnDark.addEventListener("click", () => {
     localStorage.setItem("modoSun", "oscuro");
   } else {
     localStorage.removeItem("modoSun");
-    }
+  }
 
   if (body.classList.contains("body-dark")) {
     localStorage.setItem("modoBody", "activado");
@@ -70,47 +50,24 @@ btnDark.addEventListener("click", () => {
     localStorage.removeItem("modoBody");
   }
 
+  if (logoNav.classList.contains("logoImgdark")) {
+    localStorage.setItem("logoDark", "activado");
+  } else {
+    localStorage.removeItem("logoDark");}
+
   const tieneModDark = [...titleRed].some(title =>
     title.classList.contains("mod-dark"));
   if (tieneModDark) {
     localStorage.setItem("modoTitle", "activado");
   } else {
-    localStorage.removeItem("modoTitle");
-  }
+    localStorage.removeItem("modoTitle");}
 
-  //  objetos
-  if (logoNav.classList.contains("logoImgdark")) {
-    localStorage.setItem("logoDark", "activado");
+  const cirModDark = [...circulos].some(cir =>
+    cir.classList.contains("cirDark"));
+  if (tieneModDark) {
+    localStorage.setItem("modocirculos", "oscuros");
   } else {
-    localStorage.removeItem("logoDark");
-  }
-
-//   circulo
-if (logoHtml.classList.contains("logoHtmldarck")) {
-  localStorage.setItem("cirHtml", "activado");
-} else {
-  localStorage.removeItem("cirHtml");
-}
-
-if (logoCss.classList.contains("logoCssdarcktml")) {
-  localStorage.setItem("cirCss", "activado");
-} else {
-  localStorage.removeItem("cirCss");
-}
-
-if (logoJs.classList.contains("logoJsdarck")) {
-  localStorage.setItem("cirJs", "activado");
-} else {
-  localStorage.removeItem("cirJs");
-}
-
-if (logoSvg.classList.contains("logoSvgdarck")) {
-  localStorage.setItem("cirSvg", "activado");
-} else {
-  localStorage.removeItem("cirSvg");
-}
-
-
+    localStorage.removeItem("modocirculos");}   
 
 
 });

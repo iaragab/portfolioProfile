@@ -27,7 +27,7 @@ header{
 }
 
 .logo-ig{
-    width: 5%;
+    width: 4%;
     margin: 10px 27px;
 }
 
@@ -75,7 +75,7 @@ a:hover {
 }
 
 .botonCamb{
-    padding: 3%;
+    padding: 2%;
     border-radius: 100%;
     margin-right: 25px;
     background-color:var(--fondoDark);
@@ -206,11 +206,11 @@ h2{
     border-radius: 50px;
     box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.817)
 }
-.circulo{
-    background-color: #2c2c2c;
-    color: #ffffff;
-    border: 1px solid white;
-    text-shadow: 0px 0px 2px #fff;
+.circulo {
+  background-color: #170202;
+  border: 1px solid white;
+  text-shadow: 0px 0px 1px #fff;
+  color: #f4f4f4;
 }
 
 /* ============= galeria ============= */
@@ -442,27 +442,9 @@ h1{
  
  }
 
-.logoHtmldarck{
-  background-color: #b85c00;
-  color: #faf9f9;
-  text-shadow: 0px 0px 1px #a73800;
+.cirDark{
+    background-color: #802e2e;
+    border-radius: 25px;
 }
-.logoCssdarcktml{
-  background-color: #730ba2;
-  color: #faf9f9;
-  text-shadow: 0px 0px 1px #630496;
-}
-.logoJsdarck{
-  background-color: #cdc120;
-  color: #faf9f9;
-  text-shadow: 0px 0px 1px #baa502;
-}
-.logoSvgdarck{
-  background-color: #a5a5a5;
-  color: #faf9f9;
-  text-shadow: 0px 0px 1px #6c6c6c;
-}
-
-
 
 
