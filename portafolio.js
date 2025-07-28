@@ -23,11 +23,11 @@ const imagenes = [
     },
     {
         id : 1,
-        img : 'img-portafolio/Captura de pantalla 2025-07-24 a la(s) 10.02.38 p. m..png',
+        img : 'img-portafolio/fondo4.png',
     },
     {
         id : 1,
-        img : '../portafolio/img-portafolio/fondo1.png',
+        img : 'img-portafolio/fondo2.png',
     }
 ]
 
