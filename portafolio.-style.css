@@ -22,9 +22,14 @@ body{
 }
  /* ================== generales ================== */
 button{
-    width: 5rem;
-    height: 3rem;
-    border-radius: 25px;
+    width: 30%;
+    border-radius: 50px;
+    font-size: 2rem;
+    padding: 2%;
+}
+
+button:hover{
+    transform: scale(1.1);
 }
  /* ================== main ================== */
  main{
@@ -126,15 +131,11 @@ nav a :hover{
     border-radius: 0px 100px 0px 5px;
 }
 .botones{
-    text-align: center;
     padding: 5%;
-}
-.botones button{
-    width: 10rem;
-    height: 4rem;
-    font-size: 2rem;
-    border-radius: 50px;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;}
+
 
  /* ================== separadores ================== */
 .separador{
@@ -202,7 +203,8 @@ nav a :hover{
 .proyext-post{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    margin-bottom: 100px;
     
 }
 .box{
@@ -211,7 +213,7 @@ nav a :hover{
     align-items: center;
 }
 .box-title-wrapper{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     padding: 2% 5%;
@@ -228,13 +230,13 @@ nav a :hover{
 }
 
 .post-img{
-    width: 80%;
+    width: 90%;
      margin: 0;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .detalles{
-    width: 80%;
+    width: 90%;
     padding: 2%;
     margin: 0;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -246,12 +248,10 @@ nav a :hover{
     background-color:var(--colorRosetD);
     color: white;
     border: none;
-    font-size: 1.5rem;
     box-shadow: 0px 0px 4px rgba(63, 63, 63, 0.266);
 }
 .boton-git:hover{
     background-color: #802e2e7b;
-    transform: scale(1.5);
 }
 
 
@@ -259,64 +259,131 @@ nav a :hover{
 
  /* ================== lenguajes ================== */
 
+.lenguajes{
+    width: 100vw;
+}
+.info-me{
+    width: 100vw;
+    text-align: center;
+    padding: 0 2%;
+}
+.info-page-proyect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-lap{
+    width:25%;
+}
 
+.info-me p{
+    font-size: clamp(2rem, 2vw, 2.5rem);
+    padding: 2% 0%;
+    margin: 0;
+}
 
+/* ====== logoscirculos ====== */
+.flex-circ{
+    width: 100vw;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    margin: 100px 0px;
+}
+.circulos{
+    width: 6%;
+    color: #f4f4f4;
+    background-color: #802e2e;
+    padding: 2% 0px;
+    font-size: clamp(2rem, 2vw, 3rem);
+    border-radius: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px  rgb(38, 38, 38);
 
-
-
-
+}
+.circulos:hover{
+    transform: scale(1.2);
+}
  /* ================== contactos ================== */
 
+.quest{
+    width: 100vw;
+    background-image:url(img-portafolio/cartas.png), url(img-portafolio/fondo5.png);
+    background-size: cover;
+    padding: 2%;
+}
+
+.questionario{
+    padding: 2%;
+    width: 30%;
+    text-align: center;
+    color: wheat;
+    background-color: rgba(74, 1, 1, 0.48);
+    backdrop-filter:blur(40px);
+    border-radius:50px;
+}
+.questionario:hover{
+    box-shadow: 0px 0px 30px 27px #e001012c, 0px 0px 20px rgba(255, 0, 0, 0.34), 0px 0px 50px pink;
+    background-color: #8a010142;
+
+}
+.questionario h3{
+    font-size: 3rem;
+}
+
+.questionario p{
+    font-size: clamp(2rem, 2vw, 2rem);
+}
+.questionario input{
+    padding: 3%;
+    font-size: 1.5rem;
+    margin: 25px 0px;
+    border-radius: 25px;
+
+
+}
+.questionario textarea{
+    font-size: 1.5rem;
+    padding: 3%;
+    border-radius: 25px;
+}
+
+
  /* ================== footer ================== */
+
+footer{
+    width: 100vw;
+    background-color: #121212;
+    padding: 1%;
+}
+footer .foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot a{
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+
+
+/* ================== laptop ================== */
 
 @media (max-width: 800px) {
 }
 
-/* main */
 
-.imagenBooks{
-    margin:0px;
+ /* ================== phone ================== */
+
+@media (max-width: 800px) {
 }
 
-h1{
-    font-size: 2rem;
-    margin: 0;
-}
-/* segunda parte */
-.estudios{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
 
-/* tercera parte */
-.idiomas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.logos{
-    width: 60px;
-    height: 60px;
-    font-size: 0.8rem;
-}
-
-/* galeria */
-
- .izquierda{
-    left: 150px;
-    bottom: 25px;
- }
-  .derecha{
-    right: 150px;
-    bottom: 25px;
- }
-
-.foot a{
-    font-size: 0.8rem;
-}
 
 
  /* ================== modo oscuro ================== */
