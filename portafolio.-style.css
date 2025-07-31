@@ -288,16 +288,14 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
     border: none;
     box-shadow: 0px 0px 4px rgba(63, 63, 63, 0.266);
 }
-.boton-git:hover{
-    background-color: #F5F5DC;
-    box-shadow: 0px 0px 4px var(--colorRosetD);
-}
+
 .boton-git a{
     color:rgb(254, 247, 232);
     text-decoration: none;
 }
-.boton-git a:hover{
-    color:black;
+.boton-git:hover{
+    color: white;
+    transform: scale(1.3);
 }
 .lenguajes{
     width: 100vw;
@@ -314,6 +312,7 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
 }
 .img-lap{
     width:25%;
+    filter: contrast(0.6);
 }
 
 .info-me p{
@@ -356,7 +355,7 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
 
 .questionario{
     padding: 2%;
-    width: 28%;
+    width: 50vw;
     text-align: center;
     color: wheat;
     background-color: rgba(74, 1, 1, 0.48);
@@ -389,9 +388,7 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
     padding: 3%;
     border-radius: 25px;
 }
-.questionario .recuadro-text{
-    margin-top: 50px;
-}
+
 
 
  /* ================== footer ================== */
@@ -399,7 +396,7 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
 footer{
     width: 100vw;
     background-color: #121212;
-    padding: 1%;
+    padding: 0.5%;
 }
 footer .foot {
     display: flex;
@@ -445,10 +442,21 @@ nav a, button{font-size: 1.5rem;}
  /* ================== phone ================== */
 
 @media (max-width: 800px) {
+    main{background-image: url(img-portafolio/cara-cir.png),url(img-portafolio/imagen-fondo-bordo.png);
+    background-size: cover;
+    background-repeat: no-repeat;}
+    .imagenBooks{display: none;}
+    nav a{display: none;}
+    .galeria{flex-direction: column;margin: 0px;}
+    .detalles p {display: none;}
+    .info-me p{font-size: 1.2rem;}
+    .img-lap {width: 60%;}
+    .boton-git a{font-size: 1.5rem;}
+    .circulos {width: 15%;font-size: larger;padding: 2% 0px;}
+    .questionario{margin: 0 auto; padding: 1%;width: 80vw;}
+    .questionario p {font-size: 1.5rem;margin: 8px;}
+    .botones .more, .botones .linkedin{font-size: 1.2rem;}
 }
-
-
-
 
  /* ================== modo oscuro ================== */
 
