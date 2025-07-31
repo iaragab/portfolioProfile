@@ -384,7 +384,7 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
     background-color: rgba(74, 1, 1, 0.48);
     backdrop-filter:blur(40px);
     border-radius:50px;
-    transition: all 0.7s ease;
+    transition: all 0.6s ease;
 }
 .questionario:hover{
     box-shadow: 0px 0px 30px 27px #e001012c, 0px 0px 20px rgba(255, 0, 0, 0.34), 0px 0px 50px pink;
