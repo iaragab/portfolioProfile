@@ -469,7 +469,8 @@ nav a, button{font-size: 1.5rem;}
     background-repeat: no-repeat;}
     .imagenBooks{display: none;}
     nav a{display: none;}
-    .galeria{flex-direction: column;margin: 0px;}
+    .galeria{flex-direction: column;margin: 10px;}
+    .proyect-post {height: 75vh;}
     .detalles p {display: none;}
     .info-me p{font-size: 1.2rem;}
     .img-lap {width: 60%;}
