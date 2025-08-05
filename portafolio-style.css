@@ -53,13 +53,13 @@ nav .botonCamb{
      transform: scale(1.1);
 }
 
-.botonCamb:hover{   
+/* .botonCamb:hover{   
     transition: all 0.7s ease;
     background-color: #ffe0db;
     background-image: url(img-portafolio/sun.png);
     background-size: contain;
     background-repeat: no-repeat;
-}
+} */
 
  /* ================== main ================== */
  main{
@@ -484,21 +484,21 @@ nav a, button{font-size: 1.5rem;}
  /* ================== modo oscuro ================== */
 
 
- .body-dark{
+.body-dark{
     background-color: var(--fondoDark);
     color: var(--color-day);
- }
+}
 
- .mod-dark{
+.mod-dark{
     color: rgb(185, 76, 94);
     text-shadow: 0px 1px 1px red, 2px 4px 25px #b20101;
- }
+}
 
- .logoImgdark {
+.logoImgdark {
   filter: invert(1);
 }
 
- .botonSun{
+.botonSun{
     background-color:rgb(179, 179, 179);
     background-image: url(img-portafolio/sun.png);
     background-size: 60%;
@@ -506,13 +506,5 @@ nav a, button{font-size: 1.5rem;}
     background-position-y: 50%;
     background-position-x: 50%;
  
- }
-
-.cirDark{
-    background-color: #802e2e;
-    border-radius: 25px;
 }
 
-.linksNewColor{
-    color: rgb(169, 2, 2);
-}
