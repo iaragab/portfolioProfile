@@ -262,13 +262,8 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     padding: 2% 5%;
+    background-color: #e7e7e727;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-
-.box p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
 }
 
 .box-title{
@@ -290,10 +285,12 @@ nav a:hover{
     width: 95%;
     padding: 2%;
     margin: 0;
+    background-color: #e7e7e727;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
-.detalles p{
-    font-size: 1.7rem;
+.miniText{
+    font-size: 1.3rem;
+  line-height: 1.2;
 }
 .boton-git{
     width: 23%;
