@@ -1,39 +1,69 @@
 const body = document.body;
 const btnDark = document.getElementById("moon-sun");
-const titleRed = document.querySelectorAll(".title-color");
 const logoNav = document.getElementById("logo");
-const circulos = document.querySelectorAll(".circulo");
+const title = document.getElementById("title-chance");
+const linkUl = document.querySelectorAll(".a-chance")
 
 
 // Recuperar configuración guardada
-  if (localStorage.getItem("modoSun") === "oscuro") {
+  if (localStorage.getItem("modoBodyDark") === "oscuro") {
+    body.classList.add("body-dark");
+}
+  if (localStorage.getItem("modoSun") === "activo"){
     btnDark.classList.add("botonSun");
 }
+  if (localStorage.getItem("modoTitle") === "activo") {
+    title.classList.add("title-black");
+}
 
-
+  if (localStorage.getItem("modoLogo") === "activo") {
+    logoNav.classList.add("logoImgdark");
+}
+if (localStorage.getItem("modolinks") === "activos") {
+    linkUl.forEach(linkA => linkA.classList.add("linkA"))
+}
 
 // Función del botón
 
 btnDark.addEventListener("click", () => {
-  btnDark.classList.toggle("botonSun");
-  circulos.forEach(cir => cir.classList.toggle("cirDark"));
+   body.classList.toggle("body-dark") 
+    btnDark.classList.toggle("botonSun");
+    title.classList.toggle("title-black")
+    logoNav.classList.toggle("logoImgdark")
+    linkUl.forEach(linkA => linkA.classList.toggle("linkA"));
 
 
+    if (body.classList.contains("body-dark")) {
+    localStorage.setItem("modoBodyDark", "oscuro");
+    } else {
+    localStorage.removeItem("modoBodyDark");
+    }
 
-
-  // Guardar estado en localStorage
-  if (btnDark.classList.contains("botonSun")) {
-    localStorage.setItem("modoSun", "oscuro");
+    if (btnDark.classList.contains("botonSun")) {
+    localStorage.setItem("modoSun", "activo");
   } else {
     localStorage.removeItem("modoSun");
   }
 
-  const cirModDark = [...circulos].some(cir =>
-    cir.classList.contains("cirDark"));
-  if (tieneModDark) {
-    localStorage.setItem("modocirculos", "oscuros");
+    if (title.classList.contains("title-black")) {
+    localStorage.setItem("modoTitle", "activo");
   } else {
-    localStorage.removeItem("modocirculos");}   
+    localStorage.removeItem("modoTitle");
+  }
+
+  if (logoNav.classList.contains("logoImgdark")) {
+  localStorage.setItem("modoLogo", "activo"); 
+} else {
+  localStorage.removeItem("modoLogo");
+}
+
+
+ const chanceLink = [...linkUl].some(linkA =>
+    linkA.classList.contains("linkA"));
+  if (chanceLink) {
+    localStorage.setItem("modolinks", "activos");
+  } else {
+    localStorage.removeItem("modolinks");}   
 
 
 });

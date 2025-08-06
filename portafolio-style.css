@@ -51,6 +51,7 @@ nav .botonCamb{
      background-position-x: 50%;
      background-repeat: no-repeat;   
      transform: scale(1.1);
+     cursor: pointer;
 }
 
 /* .botonCamb:hover{   
@@ -72,16 +73,14 @@ nav .botonCamb{
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(30 30 30 / 20%);
-    backdrop-filter:blur(10px);
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.266);
-
+    background-color: rgb(30 30 30 / 0%);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 27%);
  }
 
 .logo-ig{
     width: 5rem; 
     margin: 0 5%;
-    filter: invert(1);
 }
 nav{
     display: flex;
@@ -89,7 +88,6 @@ nav{
     align-items: center;
     gap: 3rem;
     margin: 0 5%;
-    color: #121212;
 }
 nav ul{
     display: flex;
@@ -99,7 +97,7 @@ nav ul{
 }
 nav a{
     text-decoration: none;
-    color: #f0f0f0;
+    color: #171717;
     font-size: 2rem;
 }
 
@@ -109,13 +107,13 @@ nav a:hover{
 
  /* ======== perfil ======== */
 
-.imagenBooks{
+.imagenPerfile{
     width: 35%;
     height: 50%;
     border-radius: 50%;
-    background-color: rgba(30, 30, 30, 0.101);
-    backdrop-filter:blur(5px);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.391);
+    background-color: rgb(30 30 30 / 0%);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 27%);
     transition: all 0.7s ease;
     /* filter: hue-rotate(180deg) saturate(1.2); */
 }
@@ -133,8 +131,9 @@ nav a:hover{
 .title{
     padding: 5%;
     border-radius: 20%;
-box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250, 235, 215, 0.642);
-    backdrop-filter:blur(5px);
+    background-color: rgb(30 30 30 / 0%);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 27%);
     text-align: center;
 }
 
@@ -150,7 +149,7 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
 
 .triangulo, .mintriangulo{
     position: absolute;
-box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250, 235, 215, 0.642);
+    box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250, 235, 215, 0.642);
     backdrop-filter:blur(5px);
     border-radius: 50%;
 }
@@ -212,9 +211,6 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
 
  /* ================== proyectos ================== */
 
-.proyect-post{
-    height: 90vh;
-}
 .title-paraffo{
     width: 100vw;
     text-align: center;
@@ -322,6 +318,7 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
 
 .lenguajes{
     width: 100vw;
+    background-image: url(../img-portafolio/bookANDcaffe.png);
 }
 .info-me{
     width: 100vw;
@@ -371,14 +368,14 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
 
 .quest{
     width: 100vw;
-    background-image:url(img-portafolio/cartas.png), url(img-portafolio/fondo5.png);
+    background-image:url(img-portafolio/cartas.png), url(img-portafolio/imagen-fondo-bordo.png);
     background-size: cover;
     padding: 2%;
 }
 
 .questionario{
     padding: 2%;
-    width: 50vw;
+    width: 40vw;
     text-align: center;
     color: wheat;
     background-color: rgba(74, 1, 1, 0.48);
@@ -403,8 +400,6 @@ box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.563);    background-color:rgba(250
     font-size: 1.5rem;
     margin: 25px 0px;
     border-radius: 25px;
-
-
 }
 .questionario textarea{
     font-size: 1.5rem;
@@ -422,6 +417,7 @@ footer{
     padding: 0.5%;
 }
 footer .foot {
+    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -451,7 +447,7 @@ nav a, button{font-size: 1.5rem;}
 .box-icon {width: 10%;}
 .title-paraffo p, a {font-size: 2rem;}
 .title-paraffo {margin-bottom: 10px;}
-.galeria{margin-bottom:175px;}
+.galeria{margin-bottom:95px;}
   /* info */
 .info-me p{  margin-top: 80px;}
 .circulos{width: 7%; padding: 2% 0px;}
@@ -467,16 +463,20 @@ nav a, button{font-size: 1.5rem;}
     main{background-image: url(img-portafolio/cara-cir.png),url(img-portafolio/imagen-fondo-bordo.png);
     background-size: cover;
     background-repeat: no-repeat;}
-    .imagenBooks{display: none;}
+    .imagenPerfile{display: none;}
     nav a{display: none;}
-    .galeria{flex-direction: column;margin: 10px;}
-    .proyect-post {height: 75vh;}
+    /* galery */
+    .galeria {flex-direction: column; align-items: center;}
+    .box-icon {width: 7%;}
     .detalles p {display: none;}
+    /* infomacion */
     .info-me p{font-size: 1.2rem;}
     .img-lap {width: 60%;}
     .boton-git a{font-size: 1.5rem;}
     .circulos {width: 15%;font-size: larger;padding: 2% 0px;}
+    /* questionario */
     .questionario{margin: 0 auto; padding: 1%;width: 80vw;}
+    .separador{margin-top: 65px;}
     .questionario p {font-size: 1.5rem;margin: 8px;}
     .botones .more, .botones .linkedin{font-size: 1.2rem;}
 }
@@ -485,26 +485,26 @@ nav a, button{font-size: 1.5rem;}
 
 
 .body-dark{
-    background-color: var(--fondoDark);
-    color: var(--color-day);
+    background-color: black;
+     color: white;
 }
 
-.mod-dark{
-    color: rgb(185, 76, 94);
-    text-shadow: 0px 1px 1px red, 2px 4px 25px #b20101;
+.body-dark .title-black{
+    background-color: rgba(0, 0, 0, 0.64);
 }
 
-.logoImgdark {
-  filter: invert(1);
+.body-dark .logoImgdark {
+    filter: invert(1);
+}
+.body-dark .linkA{
+    color: rgb(235, 235, 235);
 }
 
-.botonSun{
-    background-color:rgb(179, 179, 179);
-    background-image: url(img-portafolio/sun.png);
+.body-dark .botonSun{
+    background-image:url(img-portafolio/sun.png);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-position-x: 50%;
  
 }
-

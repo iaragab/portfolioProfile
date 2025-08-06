@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfile</title>
+    <meta name="description" content="Iara Moreiras´s Portfolio">
+    <meta name="author" content="Iara Moreiras Franco">
     <link rel="stylesheet" href="portafolio-style.css">
+    <title>Porfile</title>
 </head>
 <body>
     <main>
@@ -12,19 +13,19 @@
                <img id="logo" class="logo-ig" src="img-portafolio/fondo_w_2.png" alt="">
             <nav>
                 <ul class="links" id="menuUl">
-                    <li class="headerLink"><a href="#lenguajes">Languages</a></li>
-                    <li class="headerLink"><a href="#proyectos">Projects</a></li>
-                    <li class="headerLink"><a href="#contact">Contact</a></li>
+                    <li class="headerLink"><a class="a-chance" href="#lenguajes">Languages</a></li>
+                    <li class="headerLink"><a class="a-chance" href="#proyectos">Projects</a></li>
+                    <li class="headerLink"><a class="a-chance" href="#contact">Contact</a></li>
                 </ul>
                 <button class="botonCamb" id="moon-sun"></button>
             </nav>
         </header>
 
         <section class="inicio">
-        <img class="imagenBooks" src="img-portafolio/cara-cir.png" alt="">
+        <img class="imagenPerfile" src="img-portafolio/cara-cir.png" alt="">
         
         <div class="info">
-                <div class="title">
+                <div class="title" id="title-chance">
                 <h2>Hello, my name is</h2>
                 <h1 class="title-color">Iara Moreiras Franco</h1>
                 <p class="medida">Nice to meet you</p>
@@ -33,7 +34,9 @@
         <div class="mintriangulo"></div>
 
             <div class="botones">
-                <button class="linkedin">LinkedIn</button>
+               <a href="https://www.linkedin.com/in/iaragab/" target="_blank">
+            <button class="linkedin">LinkedIn</button>  
+            </a>
             </div>
         </div>
         </section>
@@ -125,7 +128,7 @@
         <form action="https://formsubmit.co/gabu123iara@gmail.com" method="post">
             <p>
                 <label for="informacion-person">Name</label><br>
-                <input value="info-nombre" type="text" id="nombre-text" name="nombre" placeholder="Nombre">
+                <input type="text" id="nombre-text" name="nombre" placeholder="Nombre">
             </p>
             <p>
                 <label for="info-gmail">Email</label><br>
