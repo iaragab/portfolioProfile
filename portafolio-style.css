@@ -11,11 +11,9 @@ body{
 
 :root{
     --fondoDark:#121212;
+    --color-boton:#224da9;
     --color-day:#f4f4f4;  
     --title: #ffe0db;
-    --RosetWhite: #efb2a8;
-    --colorRosetW: #cc7366 ;
-    --colorRosetD:#802e2e;
     --fondoRecuadro:#aa8e7db2;
     --tituloColor: #4c3830;
     --radio-border:25px;
@@ -24,21 +22,22 @@ body{
  /* ================== generales ================== */
 button{
     width: 30%;
+    color: white;
+    background-color: var(--color-boton);
     border-radius: 50px;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 2%;
     transition: all 0.3s ease;
 }
 
 button:hover{
-    background-color: var(--colorRosetD);
-    color: wheat;
-    transform: scale(1.1);
+    background-color: #c0b388 ;
+    color: #121212;
+    transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(255, 200, 200, 0.3);
-    transform: translateY(-5px);}
 
-
+}
 /*============= cambios============  */
 
 nav .botonCamb{ 
@@ -65,7 +64,7 @@ nav .botonCamb{
  /* ================== main ================== */
  main{
     width: 100vw;
-    background-image: url(img-portafolio/imagen-fondo-bordo.png);
+    background-image: url(img-portafolio/IMG_02722.jpeg);
     background-size: cover;
  }
 
@@ -73,7 +72,7 @@ nav .botonCamb{
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(30 30 30 / 0%);
+    background-color: rgba(30, 30, 30, 0);
     backdrop-filter: blur(8px);
     box-shadow: 0px 0px 7px rgb(0 0 0 / 27%);
  }
@@ -109,42 +108,36 @@ nav a:hover{
 
 .imagenPerfile{
     width: 35%;
-    height: 50%;
-    border-radius: 50%;
-    background-color: rgb(30 30 30 / 0%);
-    backdrop-filter: blur(8px);
-    box-shadow: 0px 0px 7px rgb(0 0 0 / 27%);
-    transition: all 0.7s ease;
-    /* filter: hue-rotate(180deg) saturate(1.2); */
+    margin-right: 8%;
+    filter: contrast(0.9);
 }
 
 .inicio {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: row-reverse;
 }
 .info{
     position: relative;
-    margin: 8% 0;
-    
 }
 .title{
-    padding: 5%;
-    border-radius: 20%;
-    background-color: rgb(30 30 30 / 0%);
+    padding: 7%;
+    background-color: rgba(30, 30, 30, 0);
     backdrop-filter: blur(8px);
-    box-shadow: 0px 0px 7px rgb(0 0 0 / 27%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.142);
     text-align: center;
 }
 
 .title h2{
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: 100;
 }
 .title h1{
-    font-size: clamp(2rem, 6vw, 7rem);
+    font-size: clamp(2rem, 6vw, 6rem);
 }
 .title p{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 
@@ -159,20 +152,19 @@ nav a:hover{
     width: 100%;
     padding: 13px;
     box-shadow: 0px 0px 2px 0px #464646bf;
-    background-color: var(--colorRosetD);
-
 }
 
  /* ================== separadores ================== */
 .separador{
     width: 100vw;
     padding: 1%;
+    margin: 6% 0;
 }
 .line{
     width: 10%;
     height: 1rem;
     border-radius: 25px;
-    background-color: #802e2e;
+    background-color: var(--color-boton);
     margin: 0 auto;
 
     animation-name: lineasepar;
@@ -200,14 +192,15 @@ nav a:hover{
 .title-paraffo{
     width: 100vw;
     text-align: center;
+    margin-bottom: 5%;
 }
 .title-paraffo h1{
     font-size: 4rem;
     margin: 50px 0;
 }
 .title-paraffo p, a{
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 2rem;
+    margin:0;
 }
 .title-paraffo a{
     text-decoration: none;
@@ -228,8 +221,8 @@ nav a:hover{
     
 }
 .box{
-    padding: 1.5rem;
-    margin: 1rem;
+    /* padding: 1.5rem;
+    margin: 1rem; */
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -281,8 +274,7 @@ nav a:hover{
 .boton-git{
     width: 23%;
     padding: 1%;
-    background-color:var(--colorRosetD);
-    color: white;
+    background-color: var(--color-boton);
     border: none;
     box-shadow: 0px 0px 4px rgba(63, 63, 63, 0.266);
 }
@@ -291,12 +283,6 @@ nav a:hover{
     color:rgb(254, 247, 232);
     text-decoration: none;
 }
-.boton-git:hover{
-    color: white;
-    transform: scale(1.3);
-}
-
-
  /* ======== lenguajes ======== */
 
 .lenguajes{
@@ -314,8 +300,7 @@ nav a:hover{
     align-items: center;
 }
 .img-lap{
-    width:25%;
-    filter: contrast(0.6);
+    width:20%;
 }
 
 .info-me p{
@@ -335,7 +320,7 @@ nav a:hover{
 .circulos{
     width: 10%;
     color: #f4f4f4;
-    background-color: #802e2e;
+    background-color: var(--color-boton);
     padding: 2% 0px;
     font-size: clamp(2rem, 2vw, 3rem);
     border-radius: 30px;
@@ -351,45 +336,73 @@ nav a:hover{
 
 .quest{
     width: 100vw;
-    background-image:url(img-portafolio/cartas.png), url(img-portafolio/imagen-fondo-bordo.png);
+    background-image:url(img-portafolio/cartas.png), url(img-portafolio/IMG_02721.jpeg);
     background-size: cover;
     padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.questionario{
-    padding: 2%;
-    width: 40vw;
-    text-align: center;
-    color: wheat;
-    background-color: rgba(74, 1, 1, 0.48);
-    backdrop-filter:blur(40px);
-    border-radius:50px;
-    transition: all 0.6s ease;
+.into {
+  background-color: rgba(240, 248, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
 }
-.questionario:hover{
-    box-shadow: 0px 0px 30px 27px #e001012c, 0px 0px 20px rgba(255, 0, 0, 0.34), 0px 0px 50px pink;
-    background-color: #8a010142;
+.Marco {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 15px;
+}
 
-}
-.questionario h3{
+.Marco h2{
     font-size: 3rem;
 }
-
-.questionario p{
-    font-size: clamp(2rem, 2vw, 2rem);
+/* ===== rellenos ====== */
+label{
+    font-size: 2rem;
 }
-.questionario input{
-    padding: 3% 7%;
+input{
     font-size: 1.5rem;
-    margin: 25px 0px;
-    border-radius: 25px;
-}
-.questionario textarea{
-    font-size: 1.5rem;
-    padding: 3%;
-    border-radius: 25px;
 }
 
+
+.belt,
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 10%;
+  border-radius: 25px;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  transition: all 0.3s ease;
+}
+
+.belt:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(74, 74, 74, 0.241);
+}
+
+.belt:hover,
+select:hover,
+textarea:hover {
+  transform: scale(1.02);
+}
+
+textarea {
+  resize: vertical;
+}
+.botonContact{
+    text-align: center;
+}
+
+/* ===== footer ====== */
 
 
  /* ================== footer ================== */
@@ -443,11 +456,10 @@ nav a, button{font-size: 1.5rem;}
  /* ================== phone ================== */
 
 @media (max-width: 800px) {
-    main{background-image: url(img-portafolio/cara-cir.png),url(img-portafolio/imagen-fondo-bordo.png);
-    background-size: cover;
-    background-repeat: no-repeat;}
+    main{display: flex;flex-direction: column;align-items: center;}
     .imagenPerfile{display: none;}
     nav a{display: none;}
+    .info{padding: 1rem;}
     /* galery */
     .galeria {flex-direction: column; align-items: center;}
     .box-icon {width: 7%;}
@@ -470,6 +482,9 @@ nav a, button{font-size: 1.5rem;}
 .body-dark{
     background-color: black;
      color: white;
+}
+.body-dark .headerBlack{
+    background-color: rgba(0, 0, 0, 0.64);
 }
 
 .body-dark .title-black{

@@ -1,6 +1,7 @@
 const body = document.body;
 const btnDark = document.getElementById("moon-sun");
 const logoNav = document.getElementById("logo");
+const headerDark = document.getElementById("dark-header")
 const title = document.getElementById("title-chance");
 const linkUl = document.querySelectorAll(".a-chance")
 
@@ -16,6 +17,10 @@ const linkUl = document.querySelectorAll(".a-chance")
     title.classList.add("title-black");
 }
 
+  if (localStorage.getItem("modoHeader") === "activo") {
+    headerDark.classList.add("headerBlack")
+  }
+
   if (localStorage.getItem("modoLogo") === "activo") {
     logoNav.classList.add("logoImgdark");
 }
@@ -30,6 +35,7 @@ btnDark.addEventListener("click", () => {
     btnDark.classList.toggle("botonSun");
     title.classList.toggle("title-black")
     logoNav.classList.toggle("logoImgdark")
+    headerDark.classList.toggle("headerBlack")
     linkUl.forEach(linkA => linkA.classList.toggle("linkA"));
 
 
@@ -47,6 +53,12 @@ btnDark.addEventListener("click", () => {
 
     if (title.classList.contains("title-black")) {
     localStorage.setItem("modoTitle", "activo");
+  } else {
+    localStorage.removeItem("modoTitle");
+  }
+
+    if (title.classList.contains("headerBlack")) {
+    localStorage.setItem("modoHeader", "activo");
   } else {
     localStorage.removeItem("modoTitle");
   }

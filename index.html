@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="dark-header">
                <img id="logo" class="logo-ig" src="img-portafolio/fondo_w_2.png" alt="">
             <nav>
                 <ul class="links" id="menuUl">
@@ -22,18 +22,19 @@
         </header>
 
         <section class="inicio">
-        <img class="imagenPerfile" src="img-portafolio/cara-cir.png" alt="">
+        <img class="imagenPerfile" src="img-portafolio/lap.png" alt="">
         
         <div class="info">
-                <div class="title" id="title-chance">
-                <h2>Hello, my name is</h2>
-                <h1 class="title-color">Iara Moreiras Franco</h1>
-                <p class="medida">Nice to meet you</p>
-                </div>
-            <div class="botones">
+            <div class="title" id="title-chance">
+            <h2>Hello, my name is</h2>
+            <h1 class="title-color">Iara Moreiras Franco</h1>
+            <p class="medida">Nice to meet you</p>
+                <div class="botones">
                <a href="https://www.linkedin.com/in/iaragab/" target="_blank">
-            <button class="linkedin">LinkedIn</button>  
-            </a>
+                <button class="linkedin">LinkedIn</button>  
+                </a>
+                 </div>
+
             </div>
         </div>
         </section>
@@ -51,7 +52,6 @@
         <figure class="box">
             <div class="box-title-wrapper">
                 <div class="box-title">Post</div>
-                <div class="box-icon"></div>
             </div>
                 <img class="post-img" src="img-portafolio/1E64C38D-C90A-4B5C-BC5F-ED20F502D015_1_201_a.jpeg" alt="">
 
@@ -66,9 +66,8 @@
         <figure class="box">
             <div class="box-title-wrapper">
                 <div class="box-title">Post</div>
-                <div class="box-icon"></div>
             </div>
-                <img class="post-img" src="img-portafolio/1E64C38D-C90A-4B5C-BC5F-ED20F502D015_1_201_a.jpeg" alt="">
+                <img class="post-img" src="img-portafolio/template_html.png" alt="">
 
             <div class="detalles">
                 <p class="miniText">Project description text, project description text, project description text</p>
@@ -81,7 +80,6 @@
         <figure class="box">
             <div class="box-title-wrapper">
                 <div class="box-title">Post</div>
-                <div class="box-icon"></div>
             </div>
                 <img class="post-img" src="img-portafolio/1E64C38D-C90A-4B5C-BC5F-ED20F502D015_1_201_a.jpeg" alt="">
 
@@ -105,7 +103,7 @@
         </div>
         <div class="flex-info">
         <div class="info-page-proyect">
-            <img class="img-lap" src="img-portafolio/lap.png" alt="">
+            <img class="img-lap" src="img-portafolio/bookANDcaffe.png" alt="">
             <button class="boton-git"><a href="https://github.com/iaragab">GitHub</a></button>
         </div>
             <div class="flex-circ">
@@ -120,27 +118,28 @@
 
 
   <section id="contact" class="quest">
-    <div class="questionario">
-        <h3>Contact</h3>
+    <div class="into">
+
+      <div class="environment">
         <form action="https://formsubmit.co/gabu123iara@gmail.com" method="post">
-            <p>
-                <label for="informacion-person">Name</label><br>
-                <input type="text" id="nombre-text" name="nombre" placeholder="Nombre">
-            </p>
-            <p>
-                <label for="info-gmail">Email</label><br>
-                <input value="correo" type="text" id="correo" name="gmail" placeholder="correo">
-            </p>
-            <p>
-                <label for="mensaje">Message</label><br>
-                <textarea class="recuadro-text" name="mensaje" id="mensaje" placeholder="ingrese mensaje" cols="30" rows="7"></textarea>
-            </p>
-            <p>
-                <button type="submit">send</button>
+          
+            <div class="comentarios">
 
-            </p>
+            <label for="Tribe">Contact Person</label>
+            <input class="belt" id="Tribe" type="text" value="name">
+
+            <label for="Team">Gmail</label>
+            <input class="belt" id="Team" type="text" value="Gmail">
+
+            <label for="message">Message</label>
+            <textarea id="message" cols="50" rows="10" placeholder="Details"></textarea>
+          </div>
+
+          <p class="botonContact">
+            <button type="submit">Send</button>
+          </p>
         </form>
-
+      </div>
     </div>
 
  </section>
