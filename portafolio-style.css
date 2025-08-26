@@ -137,7 +137,7 @@ nav a:hover{
     font-size: clamp(2rem, 6vw, 6rem);
 }
 .title p{
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 
@@ -162,7 +162,7 @@ nav a:hover{
 }
 .line{
     width: 10%;
-    height: 1rem;
+    height: 15px;
     border-radius: 25px;
     background-color: var(--color-boton);
     margin: 0 auto;
@@ -259,11 +259,14 @@ nav a:hover{
     margin: 0;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
-
+.tercero{
+    filter: brightness(0);
+}
 .detalles{
     width: 95%;
     padding: 2%;
     margin: 0;
+    text-align: center;
     background-color: #e7e7e727;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
@@ -304,7 +307,7 @@ nav a:hover{
 }
 
 .info-me p{
-    font-size: clamp(2rem, 2vw, 2.5rem);
+    font-size: 1.5rem;
     padding: 2% 0%;
     margin: 0;
 }
@@ -313,15 +316,17 @@ nav a:hover{
 .flex-circ{
     width: 100vw;
     display: flex;
-    gap: 10%;
+    gap: 20%;
+    margin: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 100px 0px;
 }
 .circulos{
-    width: 10%;
     color: #f4f4f4;
     background-color: var(--color-boton);
-    padding: 2% 0px;
+    padding: 2% 2%;
+    margin: 2%;
     font-size: clamp(2rem, 2vw, 3rem);
     border-radius: 30px;
     text-align: center;
@@ -365,10 +370,10 @@ nav a:hover{
 }
 /* ===== rellenos ====== */
 label{
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 input{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 
@@ -377,7 +382,7 @@ select,
 textarea {
   width: 100%;
   padding: 0.8rem;
-  margin-bottom: 10%;
+  margin:10px 0px;
   border-radius: 25px;
   border: 1px solid rgba(128, 128, 128, 0.4);
   transition: all 0.3s ease;
@@ -446,7 +451,6 @@ nav a, button{font-size: 1.5rem;}
 .galeria{margin-bottom:95px;}
   /* info */
 .info-me p{  margin-top: 80px;}
-.circulos{width: 7%; padding: 2% 0px;}
 .flex-circ{margin: 70px 0px;}
 /* contacto */
 .questionario h3 {margin: 10px 0px;}
@@ -468,7 +472,7 @@ nav a, button{font-size: 1.5rem;}
     .info-me p{font-size: 1.2rem;}
     .img-lap {width: 60%;}
     .boton-git a{font-size: 1.5rem;}
-    .circulos {width: 15%;font-size: larger;padding: 2% 0px;}
+    .circulos {padding: 2%;}
     /* questionario */
     .questionario{margin: 0 auto; padding: 1%;width: 80vw;}
     .separador{margin-top: 65px;}
