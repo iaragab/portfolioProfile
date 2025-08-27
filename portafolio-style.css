@@ -53,13 +53,6 @@ nav .botonCamb{
      cursor: pointer;
 }
 
-/* .botonCamb:hover{   
-    transition: all 0.7s ease;
-    background-color: #ffe0db;
-    background-image: url(img-portafolio/sun.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-} */
 
  /* ================== main ================== */
  main{
@@ -101,7 +94,7 @@ nav a{
 }
 
 nav a:hover{
-    color:rgb(247, 224, 195);
+    color:rgb(71, 104, 165);
 }
 
  /* ======== perfil ======== */
@@ -153,6 +146,47 @@ nav a:hover{
     padding: 13px;
     box-shadow: 0px 0px 2px 0px #464646bf;
 }
+ /* ======== lenguajes ======== */
+
+.lenguajes{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-image: url(../img-portafolio/bookANDcaffe.png);
+}
+
+.info-page-proyect{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    text-align: center;
+    font-size: x-large;
+}
+
+.flex-circ{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.circulos{
+    color: #1d1c1c;
+    background-color: #a2bcf3;
+    padding: 2% 2%;
+    margin: 3%;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px  rgba(38, 38, 38, 0.193);
+    transition: all 0.3s ease;
+}
+.circulos:hover{
+    transform: scale(1.2);
+    
+}
 
  /* ================== separadores ================== */
 .separador{
@@ -199,7 +233,7 @@ nav a:hover{
     margin: 50px 0;
 }
 .title-paraffo p, a{
-    font-size: 2rem;
+    font-size: x-large;
     margin:0;
 }
 .title-paraffo a{
@@ -212,6 +246,7 @@ nav a:hover{
  .galeria{
     display: flex;
     align-items: center;
+    margin: 6% 0;
 }
 
 .proyect-post{
@@ -221,14 +256,11 @@ nav a:hover{
     
 }
 .box{
-    /* padding: 1.5rem;
-    margin: 1rem; */
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all 0.3s ease;
-
 }
 
 .box:hover {
@@ -285,57 +317,6 @@ nav a:hover{
 .boton-git a{
     color:rgb(254, 247, 232);
     text-decoration: none;
-}
- /* ======== lenguajes ======== */
-
-.lenguajes{
-    width: 100vw;
-    background-image: url(../img-portafolio/bookANDcaffe.png);
-}
-.info-me{
-    width: 100vw;
-    text-align: center;
-    padding: 0 2%;
-}
-.info-page-proyect{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.img-lap{
-    width:20%;
-}
-
-.info-me p{
-    font-size: 1.5rem;
-    padding: 2% 0%;
-    margin: 0;
-}
-
-/* ====== logoscirculos ====== */
-.flex-circ{
-    width: 100vw;
-    display: flex;
-    gap: 20%;
-    margin: 20px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.circulos{
-    color: #f4f4f4;
-    background-color: var(--color-boton);
-    padding: 2% 2%;
-    margin: 2%;
-    font-size: clamp(2rem, 2vw, 3rem);
-    border-radius: 30px;
-    text-align: center;
-    box-shadow: 0px 0px 5px 0px  rgba(38, 38, 38, 0.611);
-    transition: all 0.3s ease;
-}
-.circulos:hover{
-    transform: scale(1.2);
-    
 }
  /* ================== contactos ================== */
 
@@ -446,12 +427,12 @@ nav a, button{font-size: 1.5rem;}
   /* proyecto */
 .title-paraffo h1 {font-size: 3rem;}
 .box-icon {width: 10%;}
-.title-paraffo p, a {font-size: 2rem;}
+.title-paraffo p, a {font-size: x-large;}
 .title-paraffo {margin-bottom: 10px;}
 .galeria{margin-bottom:95px;}
   /* info */
 .info-me p{  margin-top: 80px;}
-.flex-circ{margin: 70px 0px;}
+.flex-circ{margin: 70px 0px;width: 90%;}
 /* contacto */
 .questionario h3 {margin: 10px 0px;}
 .questionario input {margin: 8px 0px;width: 77%;padding: 2.5% 17px;}
@@ -486,6 +467,14 @@ nav a, button{font-size: 1.5rem;}
 .body-dark{
     background-color: black;
      color: white;
+}
+.body-dark .imgMain{
+    background-color: #6f83e5;
+    background-blend-mode: multiply;
+}
+.body-dark .contact-dark{
+    background-blend-mode: darken;
+    background-color: cornflowerblue;
 }
 .body-dark .headerBlack{
     background-color: rgba(0, 0, 0, 0.64);
