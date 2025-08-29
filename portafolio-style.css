@@ -544,21 +544,31 @@ nav a, button{font-size: 1.5rem;}
     color: #000;
 }
 
-.body-day button, .body-day .circulos {
+.body-day button, .body-day .circulos, .body-day .line {
         background-color: #6f83e5;
-
-
+}
+.body-day button:hover, .body-day .circulos:hover {
+    background-color: #6f83e5;
+    color: white;
+    box-shadow: 0px 0px 4px 2px rgba(128, 128, 128, 0.327);
 }
 .body-day .imgMain{
     background-color: #6f83e5;
     background-blend-mode: saturation;
+}
+
+.body-day .box{
+    background-color: #a8a6a627;
+}
+.body-day .box:hover{
+    background-color: none;
 }
 .body-day .contact-light{
     background-blend-mode: lighten;
     background-color: #97a8f9;
 }
 .body-day .headerWhite{
-    background-color: rgba(187, 187, 187, 0.64);
+    background-color: rgba(232, 230, 230, 0.64);
     box-shadow: 0px 2px 8px 0px #2d2d234f;
 }
 
