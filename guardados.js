@@ -1,106 +1,85 @@
 const body = document.body;
-const mainChance =document.getElementById("main");
-const btnDark = document.getElementById("moon-sun");
+const mainChance = document.getElementById("main");
+const btn = document.getElementById("moon-sun");
 const logoNav = document.getElementById("logo");
-const headerDark = document.getElementById("dark-header");
-const title = document.getElementById("title-chance");
-const linkUl = document.querySelectorAll(".a-chance");
+const headerDay = document.getElementById("chance-header");
 const contact = document.getElementById("contact")
 
 
 // Recuperar configuración guardada
-  if (localStorage.getItem("modoBodyDark") === "oscuro") {
-    body.classList.add("body-dark");
+  if (localStorage.getItem("modoBodyDark") === "day") {
+    body.classList.add("body-day");
   }
 
-  if (localStorage.getItem("modoMainDark") === "oscuro") {
-    body.classList.add("main-dark");
+  if (localStorage.getItem("modoMainday") === "day") {
+    mainChance.classList.add("imgMain");
   }
 
-  if (localStorage.getItem("modoSun") === "activo"){
-    btnDark.classList.add("botonSun");
+  if (localStorage.getItem("modoMoon") === "activo"){
+    btn.classList.add("botonMoon");
   }
-  if (localStorage.getItem("modoTitle") === "activo") {
-    title.classList.add("title-black");
-  }
-
   if (localStorage.getItem("modoHeader") === "activo") {
-    headerDark.classList.add("headerBlack")
+    headerDay.classList.add("headerWhite")
   }
 
   if (localStorage.getItem("modoLogo") === "activo") {
-    logoNav.classList.add("logoImgdark");
+    logoNav.classList.add("logoImgday");
   }
 
-  if (localStorage.getItem("modoContact") === "activos") {
-      linkUl.forEach(linkA => linkA.classList.add("contact-dark"))
+  if (localStorage.getItem("modoContact") === "activo") {
+    contact.classList.add("contact-light");
   }
 
-  if (localStorage.getItem("modolinks") === "activos") {
-      linkUl.forEach(linkA => linkA.classList.add("linkA"))
-  }
+
 
 // Función del botón
 
-btnDark.addEventListener("click", () => {
-   body.classList.toggle("body-dark") 
+btn.addEventListener("click", () => {
+   body.classList.toggle("body-day") 
    mainChance.classList.toggle("imgMain")
-    btnDark.classList.toggle("botonSun");
-    title.classList.toggle("title-black")
-    logoNav.classList.toggle("logoImgdark")
-    headerDark.classList.toggle("headerBlack")
-    contact.classList.toggle("contact-dark")
-    linkUl.forEach(linkA => linkA.classList.toggle("linkA"));
+    btn.classList.toggle("botonMoon");
+    logoNav.classList.toggle("logoImgday")
+    headerDay.classList.toggle("headerWhite")
+    contact.classList.toggle("contact-light")
 
 
-    if (body.classList.contains("body-dark")) {
-    localStorage.setItem("modoBodyDark", "oscuro");
+    if (body.classList.contains("body-day")) {
+    localStorage.setItem("modoBodyDark", "day");
     } else {
     localStorage.removeItem("modoBodyDark");
     }
 
-    if (body.classList.contains("imgMain")) {
-    localStorage.setItem("modoMainDark", "oscuro");
+    if (mainChance.classList.contains("imgMain")) {
+    localStorage.setItem("modoMainday", "day");
     } else {
-    localStorage.removeItem("modoBodyDark");
+    localStorage.removeItem("modoMainday");
     }
 
-    if (btnDark.classList.contains("botonSun")) {
-    localStorage.setItem("modoSun", "activo");
+    if (btn.classList.contains("botonMoon")) {
+    localStorage.setItem("modoMoon", "activo");
   } else {
     localStorage.removeItem("modoSun");
   }
 
-    if (title.classList.contains("title-black")) {
-    localStorage.setItem("modoTitle", "activo");
-  } else {
-    localStorage.removeItem("modoTitle");
-  }
-
-    if (title.classList.contains("headerBlack")) {
+    if (headerDay.classList.contains("headerWhite")) {
     localStorage.setItem("modoHeader", "activo");
   } else {
-    localStorage.removeItem("modoTitle");
+    localStorage.removeItem("modo");
   }
 
-  if (logoNav.classList.contains("logoImgdark")) {
+  if (logoNav.classList.contains("logoImgday")) {
   localStorage.setItem("modoLogo", "activo"); 
   } else {
   localStorage.removeItem("modoLogo");
-}
-
-    if (title.classList.contains("contact-dark")) {
-    localStorage.setItem("modoContact", "activo");
-  } else {
-    localStorage.removeItem("modoTitle");
   }
 
- const chanceLink = [...linkUl].some(linkA =>
-    linkA.classList.contains("linkA"));
-  if (chanceLink) {
-    localStorage.setItem("modolinks", "activos");
+    if (contact.classList.contains("contact-light")) {
+    localStorage.setItem("modoContact", "activo");
   } else {
-    localStorage.removeItem("modolinks");}   
+    localStorage.removeItem("modo");
+  }
 
 
 });
+
+
