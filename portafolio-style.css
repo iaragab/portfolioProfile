@@ -72,9 +72,7 @@ header .logo-ig{
 nav{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 3rem;
-    margin: 0 5%;
+
 }
 nav ul{
     display: flex;
@@ -490,7 +488,7 @@ footer .foot {
 .logo-ig{width: 3rem;}
 .title h1{font-size: clamp(2rem, 4vw, 7rem);}
 .title h2, .title p{font-size: 2rem;}
-nav a, button{font-size: 1.5rem;}
+nav a, button{font-size: 1.2rem;}
 .info .triangulo, .info .mintriangulo{display: none;}
   /* proyecto */
 .title-paraffo h1 {font-size: 3rem;}
@@ -512,15 +510,18 @@ nav a, button{font-size: 1.5rem;}
     main{display: flex;flex-direction: column;align-items: center;}
     .imagenPerfile{display: none;}
     nav a{display: none;}
+    header .logo-ig {width: 10%;}
+    nav .botonCamb {height: 30px; width: 30px;}
     .info{padding: 1rem;}
     /* galery */
     .galeria {flex-direction: column; align-items: center;}
     .box-icon {width: 7%;}
     .detalles p {display: none;}
     /* infomacion */
-      .title h1 { font-size: 3rem; }
+    .title h1 { font-size: 3rem; }
     .title h2, .title p { font-size: 1.2rem; }
     .info-me p{font-size: 1.2rem;}
+    .pantallazo{display: none;}
     .img-lap {width: 60%;}
     .boton-git a{font-size: 1.5rem;}
     .circulos {padding: 2%;}
