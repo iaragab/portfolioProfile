@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: rgb(18, 18, 18);
+    background: #161617;
     color: white;
 }
 
@@ -13,10 +13,9 @@ body{
     --fondomain:#3a0a26;
     --color-boton:#620f3f;
     --colorTitle:#5e113e;
-    --color-day:#f4f4f4;  
-    --title: #ffe0db;
-    --fondo-boton:#c0b388;
-    --tituloColor: #4c3830;
+
+    --color-day:#F6F6F6;  
+    --btn-day:#A9BABB;
     --radio-border:25px;
     --minImag:50%;
 }
@@ -40,9 +39,7 @@ a button:hover {
     transform: scale(1.2);
 }
 
-
-
- /* ================== main ================== */
+/* ================== main ================== */
  main{
     width: 100vw;
     background-color:#3a0a26;
@@ -60,10 +57,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    transition: ease-in-out 1s;
-
 }
+
 header .logo-ig{
     width: 3%;
     filter: invert(1);
@@ -71,9 +66,9 @@ header .logo-ig{
 
 nav{
     display: flex;
-    flex-direction: row;
-
+    align-items: center;
 }
+
 nav ul{
     display: flex;
     list-style: none;
@@ -90,23 +85,6 @@ nav a{
 
 nav a:hover{
     color:rgb(71, 104, 165);
-}
-
-
-nav .botonCamb{ 
-    width: 3rem;
-    height: 3rem;
-     background-color: #121212;
-     background-image: url(img-portafolio/sun.png);
-     background-size: 80%;
-    background-position-y: 50%;
-     background-position-x: 50%;
-     background-repeat: no-repeat;
-
-     transform: scale(1.1);
-     cursor: pointer;
-    transition: ease-in-out 1s;
-
 }
 
  /* ======== perfil ======== */
@@ -310,6 +288,7 @@ nav .botonCamb{
 }
 .pantallazo figure:hover{
     transform: scale(1.03);
+    background: linear-gradient(225deg, #7f0d4f, #620f3f, #070c0f,  #100C08);
 }
 
  /* ======== figure ======== */
@@ -337,7 +316,7 @@ nav .botonCamb{
 .box:hover {
   transform: scale(1.09);
   background-color: #620f3f;
-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
 }
 
@@ -454,8 +433,6 @@ textarea {
 
 }
 
-/* ===== footer ====== */
-
 
  /* ================== footer ================== */
 
@@ -488,8 +465,6 @@ footer .foot {
 .logo-ig{width: 3rem;}
 .title h1{font-size: clamp(2rem, 4vw, 7rem);}
 .title h2, .title p{font-size: 2rem;}
-nav a, button{font-size: 1.2rem;}
-.info .triangulo, .info .mintriangulo{display: none;}
   /* proyecto */
 .title-paraffo h1 {font-size: 3rem;}
 .box-icon {width: 10%;}
@@ -509,7 +484,7 @@ nav a, button{font-size: 1.2rem;}
 @media (max-width: 768px) {
     main{display: flex;flex-direction: column;align-items: center;}
     .imagenPerfile{display: none;}
-    nav a{display: none;}
+    nav{display: none;}
     header .logo-ig {width: 10%;}
     nav .botonCamb {height: 30px; width: 30px;}
     .info{padding: 1rem;}
@@ -532,75 +507,4 @@ nav a, button{font-size: 1.2rem;}
     .botones .more, .botones .linkedin{font-size: 1.2rem;}
 }
 
- /* ================== modo oscuro ================== */
 
-
-.body-day{
-    background-color: rgb(244, 244, 244);
-    color: rgb(19, 19, 19);
-    transition: ease-in-out 1s;
-
-}
-.body-day header a{
-    color: #000;
-}
-
-.body-day button, .body-day .circulos, .body-day .line {
-        background-color: #6f83e5;
-}
-.body-day button:hover, .body-day .circulos:hover {
-    background-color: #6f83e5;
-    color: white;
-    box-shadow: 0px 0px 4px 2px rgba(128, 128, 128, 0.327);
-}
-.body-day .imgMain{
-    background-color: #6f83e5;
-    background-blend-mode: saturation;
-}
-
-.body-day .box{
-    background-color: #a8a6a627;
-}
-.body-day .box:hover{
-    background-color: none;
-}
-.body-day .contact-light{
-    background-blend-mode: lighten;
-    background-color: #97a8f9;
-}
-.body-day .headerWhite{
-    background-color: rgba(232, 230, 230, 0.64);
-    box-shadow: 0px 2px 8px 0px #2d2d234f;
-}
-
-.body-day .title{
-    background-color: rgba(51, 51, 51, 0.64);
-    border: #000 1px solid;
-}
-
-.body-day .title h1, .body-day .title p, .body-day .title h2 {
-    color: rgb(244, 244, 244);
-    text-shadow: none;
-    transition: ease-in-out 1s;
-
-}
-
-.body-day .title:hover{
-    background-color:none;
-    text-shadow: none;
-    box-shadow:none;
-}
-
-.body-day .logo-ig{
-    filter: none;
-}
-
-.body-day .botonMoon{
-    background-image:url(img-portafolio/mediamoon.png);
-    background-size: 80%;
-    background-color: #171717f8;
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-    background-position-x: 50%;
- 
-}
